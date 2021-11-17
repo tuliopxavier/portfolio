@@ -1,0 +1,139 @@
+$color-gradient-3: #11a3d2;
+
+#works {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 4rem;
+
+  width: 100%;
+  padding: 7rem 3rem 5rem;
+  // margin-top: 5rem;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    height: 450px;
+    max-width: 20rem;
+    min-width: 250px;
+    border-radius: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+    outline: 1rem solid #fff;
+    overflow: hidden;
+
+    transition: transform 0.25s ease;
+    animation: moveup 1s ease;
+
+    & .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+
+        overflow: hidden;
+
+        & img {
+          height: 100%;  
+          width: auto;
+        }
+    }
+    
+
+    & h1 {
+      font-size: 1.5rem;
+      text-align: left;
+      margin: 0.5rem 1rem;
+    }
+
+    & p {
+      font-size: 1rem;
+      text-align: left;
+      margin: 0 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+
+      & .container-overlay {
+        position: absolute;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 1.5rem;
+        width: 100%;
+        height: 100%;
+        background: #ffffff90;
+      }
+    }
+
+    & .container-overlay {
+      display: none;
+
+      & a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.25s ease;
+
+        & .social-item {
+          fill: #fff;
+          height: 1.5rem;
+          width: 1.5rem;
+
+          transition: opacity 0.2s ease;
+          cursor: url("../assets/circle.svg") 25 25, pointer;
+        }
+
+        &:hover {
+          background-color: $color-gradient-3;
+          transform: scale(1.1);
+          cursor: url("../assets/circle.svg") 25 25, pointer;
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES ANIMATIONS
+
+@keyframes moveup {
+  0% {
+    transform: translateY(1000%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// MEDIA QUERIES RESPONSIVINESS
+
+@media (min-width: 768px) {
+  #works {
+    & .container {
+      height: 550px;
+      max-width: 25rem;
+      min-width: 350px;
+    }
+  }
+}

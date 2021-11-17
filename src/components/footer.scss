@@ -1,0 +1,41 @@
+$color-gradient-1: #ff5a98;
+$color-gradient-2: #7638f4;
+$color-gradient-3: #11a3d2;
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    transition: cursor 1s ease;
+
+    &:hover {
+      cursor: url("../assets/circle.svg") 25 25, pointer;
+      opacity: 0.75;
+    }
+
+    span {
+      font: 700 italic 1rem "Fira Sans";
+      background: linear-gradient(
+        45deg,
+        $color-gradient-1,
+        $color-gradient-2,
+        $color-gradient-3,
+        $color-gradient-1,
+        $color-gradient-2,
+        $color-gradient-3
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      background-size: 400% 400%;
+      animation: gradient 30s ease infinite;
+    }
+  }
+}

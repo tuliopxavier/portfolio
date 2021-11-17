@@ -1,0 +1,102 @@
+$color-gradient-1: #ff5a98;
+$color-gradient-2: #7638f4;
+$color-gradient-3: #11a3d2;
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  font-weight: 700;
+  padding: 6rem 3rem 0;
+  width: 100%;
+  height: 100vh;
+
+  & p {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  & p:last-child {
+    margin-top: 1rem;
+    font: 200 normal 1.5rem "Fira Sans";
+    margin-bottom: 2rem;
+  }
+
+  & span {
+    font: 700 italic 1.75rem "Fira Sans";
+    background: linear-gradient(
+      45deg,
+      $color-gradient-1,
+      $color-gradient-2,
+      $color-gradient-3,
+      $color-gradient-1,
+      $color-gradient-2,
+      $color-gradient-3
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+  }
+}
+
+
+// MEDIA QUERIES ANIMATIONS
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+// MEDIA QUERIES RESPONSIVINESS
+
+@media (min-width: 425px) {
+  #home p,
+  #home span {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 585px) {
+  #home p,
+  #home span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #home {
+    padding: 14rem 4rem 0;
+
+    & p,
+    & span {
+      font-size: 2.75rem;
+    }
+
+    & p:last-child {
+      margin-top: 1.5rem;
+      font: 200 normal 2rem "Fira Sans";
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #home {
+    padding: 6rem 6rem 0;
+
+    & p,
+    & span {
+      font-size: 3.5rem;
+    }
+  }
+}
