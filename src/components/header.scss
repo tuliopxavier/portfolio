@@ -2,6 +2,8 @@ $color-gradient-1: #ff5a98;
 $color-gradient-2: #7638f4;
 $color-gradient-3: #11a3d2;
 
+
+
 header {
   position: fixed;
   top: 0;
@@ -13,14 +15,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  background: rgba(255, 255, 255, 0.2);
+  
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 0 0 0.5rem 0.5rem;
-
+  transition: top .25s ease;
   z-index: 1;
+
+  @media screen and (prefers-color-scheme: dark) {
+      background: rgba(0, 0, 0, 0.5);
+  }
 
   & #avatar {
     display: flex;
@@ -32,6 +37,10 @@ header {
       height: 2.5px;
       width: 5rem;
       transform: translate(0px, 4px);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-color: #fff;
+      }
     }
 
     & img {
@@ -42,20 +51,20 @@ header {
       transition: transform .25s ease;
 
       &:hover {
-        cursor: url("../assets/circle.svg") 25 25, pointer;
         transform: scale(1.4);
       }
     }
   }
 
   & a {
-    color: #000;
     text-decoration: none;
-    transition: cursor 1s ease;
 
-    &:hover {
-      cursor: url("../assets/circle.svg") 25 25, pointer;
-      opacity: 0.75;
+    &[href="#works"] {
+      transition: opacity .25s ease;
+
+      &:hover {
+        opacity: .75;
+      }
     }
 
     & span {
@@ -85,13 +94,15 @@ header {
     & .social-item {
       height: 1.5rem;
       width: 1.5rem;
-      transition: opacity 0.2s ease;
+      transition: transform 0.25s ease;
+
+      @media screen and (prefers-color-scheme: dark) {
+        fill: #ddd;
+      }
 
       &:hover {
         fill: $color-gradient-3;
         transform: scale(1.1);
-        cursor: url("../assets/circle.svg") 25 25, pointer;
-        opacity: 0.75;
       }
     }
   }

@@ -4,8 +4,21 @@ import { ReactComponent as TwitterIcon } from "../assets/twitter-icon.svg";
 import "./header.scss";
 
 export const Header = () => {
+  let prevScrollpos = window.pageYOffset;
+  
+  // hide nav menu
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById('header').style.top = '0rem';
+    } else {
+      document.getElementById('header').style.top = '-5rem';
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
   return (
-    <header>
+    <header id='header'>
 
       <div id="avatar">
         <a href="#home"><img src="https://avatars.githubusercontent.com/u/68478459?v=4" alt="rounded avatar" /></a>

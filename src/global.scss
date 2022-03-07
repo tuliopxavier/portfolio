@@ -1,3 +1,9 @@
+// COLOR VARIABLES
+
+$color-gradient-1: #ff5a98;
+$color-gradient-2: #7638f4;
+$color-gradient-3: #11a3d2;
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,4 +13,31 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;
+}
+
+
+// LINK STYLING
+
+a {
+  color: inherit;
+  cursor: initial;
+  transition: color .25s ease;
+  
+  &:hover {
+    color: $color-gradient-3;
+    cursor: url("./assets/circle.svg") 25 25, auto;
+
+    @media screen and (prefers-color-scheme: dark) {
+      cursor: url("./assets/circle-white.svg") 25 25, auto;
+    }
+  }
+}
+
+// PREFER COLOR SCHEME DARK
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    color: #ddd;
+    background-color: #222;
+  }
 }
