@@ -19,7 +19,7 @@ $color-gradient-3: #11a3d2;
     word-break: break-word;
     
     a,
-    span {
+    .color-motion {
       white-space: nowrap;
     }
   }
@@ -31,7 +31,7 @@ $color-gradient-3: #11a3d2;
     font-size: 1rem;
   }
 
-  & span {
+  & .color-motion {
     font: 700 italic 1.75rem "Fira Sans";
     background: linear-gradient(
       45deg,
@@ -71,7 +71,7 @@ $color-gradient-3: #11a3d2;
 
 @media (min-width: 425px) {
   #home p,
-  #home span {
+  #home .color-motion {
     font-size: 2rem;
   }
 }
@@ -81,7 +81,7 @@ $color-gradient-3: #11a3d2;
     padding: 8rem 4rem 0;
 
     & p,
-    & span {
+    & .color-motion {
       font-size: 2.5rem;
     }
 
@@ -96,7 +96,7 @@ $color-gradient-3: #11a3d2;
     padding: 8rem 6rem 0;
 
     & p,
-    & span {
+    & .color-motion {
       font-size: 3rem;
     }
   }
@@ -107,7 +107,7 @@ $color-gradient-3: #11a3d2;
     padding: 6rem 6rem 0;
 
     & p,
-    & span {
+    & .color-motion {
       font-size: 3.5rem;
     }
 

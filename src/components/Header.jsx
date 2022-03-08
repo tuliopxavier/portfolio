@@ -21,7 +21,7 @@ export const Header = () => {
     <header id='header'>
 
       <div id="avatar">
-        <a href="#home"><img src="https://avatars.githubusercontent.com/u/68478459?v=4" alt="rounded avatar" /></a>
+        <a href="#home"><img src="https://avatars.githubusercontent.com/u/68478459?v=4" alt="circular profile avatar" /></a>
         <span id="divider"></span>
         <a href="#works"><span>works</span></a>
       </div>
