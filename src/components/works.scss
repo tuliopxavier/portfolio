@@ -32,13 +32,14 @@ $color-gradient-3: #11a3d2;
       padding: 1rem 0;
     }
 
-    & dl {
+    & ul {
       display: flex;
       flex-wrap: wrap;
       gap: .5rem;
       
-      & dd {
+      & li {
         color: #ff5a98;
+        list-style: none;
         background-color: rgb(255, 90, 152, 0.2);
         padding: 0 .5rem;
         border-radius: 1rem;
