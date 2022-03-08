@@ -6,7 +6,7 @@ import "./header.scss";
 export const Header = () => {
   let prevScrollpos = window.pageYOffset;
   
-  // hide nav menu
+  // hide nav menu when scrolling down
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {

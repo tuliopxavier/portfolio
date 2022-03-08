@@ -9,20 +9,26 @@ $color-gradient-3: #11a3d2;
   flex-direction: column;
 
   font-weight: 700;
-  padding: 6rem 3rem 0;
+  padding: 6rem 2rem 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 
   & p {
     font-size: 1.75rem;
     margin-bottom: 2rem;
     word-break: break-word;
+    
+    a,
+    span {
+      white-space: nowrap;
+    }
   }
 
   & p:last-child {
     margin-top: 1rem;
     font: 200 normal 1.5rem "Fira Sans";
     margin-bottom: 2rem;
+    font-size: 1rem;
   }
 
   & span {
@@ -69,36 +75,44 @@ $color-gradient-3: #11a3d2;
     font-size: 2rem;
   }
 }
-@media (min-width: 585px) {
-  #home p,
-  #home span {
-    font-size: 2.5rem;
-  }
-}
 
 @media (min-width: 768px) {
   #home {
-    padding: 14rem 4rem 0;
+    padding: 8rem 4rem 0;
 
     & p,
     & span {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
     }
 
     & p:last-child {
-      margin-top: 1.5rem;
-      font: 200 normal 2rem "Fira Sans";
+      font-size: 1.5rem;
     }
   }
 }
 
 @media (min-width: 1024px) {
   #home {
+    padding: 8rem 6rem 0;
+
+    & p,
+    & span {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #home {
     padding: 6rem 6rem 0;
 
     & p,
     & span {
       font-size: 3.5rem;
+    }
+
+    & p:last-child {
+      font-size: 2rem;
     }
   }
 }

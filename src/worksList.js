@@ -1,6 +1,16 @@
 export let worksList = [
-  {
+{
     id: 0,
+    name: 'Dashboard challenge',
+    repo: 'https://github.com/tuliopxavier/pp-challenge-web',
+    description: 'Project to meet a dashboard challenge developed using Next, Typescript, Context API, Axios, Emotion and SweetAlert.',
+    demo: 'https://pp-challenge-web-tulio-xavier.vercel.app/',
+    language: 'Typescript',
+    topics: [ 'typescript', 'react', 'nextJS', 'emotion', 'styled-components', 'sass', 'context-api', 'axios', 'sweet-alert'],
+    color: '#11a3d2'
+    },
+  {
+    id: 1,
     name: 'Smart currency converter',
     repo: 'https://github.com/tuliopxavier/smart-currency-converter',
     description: 'This web app converts the currency of your international purchases USD-BRL with IOF and spread values, updated according to the daily exchange rate.',
@@ -10,7 +20,7 @@ export let worksList = [
     color: '#11a3d2'
   },
   {
-    id: 1,
+    id: 2,
     name: 'Real time chat with Supabase',
     repo: 'https://github.com/tuliopxavier/real-time-chat-next-supabase',
     description: 'Real time application project developed with React, Next, CSS-in-JS, Supabase and websocket.',
@@ -18,16 +28,6 @@ export let worksList = [
     language: 'Javascript',
     topics: [ 'javascript', 'react', 'nextJS', 'css-in-js', 'skynexUI', 'sass', 'context-api', 'supabase'],
     color: '#ffdd00'
-  },
-  {
-    id: 2,
-    name: 'Pedido Pago dashboard challenge',
-    repo: 'https://github.com/tuliopxavier/pp-challenge-web',
-    description: 'Project to a dashboard challenge developed using Next, Typescript, Context API, Axios, Emotion and SweetAlert.',
-    demo: 'https://pp-challenge-web-tulio-xavier.vercel.app/',
-    language: 'Typescript',
-    topics: [ 'typescript', 'react', 'nextJS', 'emotion', 'styled-components', 'sass', 'context-api', 'axios', 'sweet-alert'],
-    color: '#11a3d2'
   },
   {
     id: 3,

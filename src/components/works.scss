@@ -2,13 +2,13 @@ $color-gradient-1: #ff5a98;
 $color-gradient-2: #7638f4;
 $color-gradient-3: #11a3d2;
 
-section#works {
+#works {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   flex-wrap: wrap;
   gap: 4rem;
 
-  padding: 3rem 6rem;
+  padding: 2rem;
 
   & .work-container {
     border-bottom: solid 1px #ddd;
@@ -17,6 +17,10 @@ section#works {
 
     & a:first-of-type {
       text-decoration: none;
+    }
+
+    & a:nth-of-type(2) {
+      cursor: pointer;
     }
 
     & h3 {
@@ -35,7 +39,7 @@ section#works {
       
       & dd {
         color: #ff5a98;
-        background-color: rgb(255, 90, 152, 0.25);
+        background-color: rgb(255, 90, 152, 0.2);
         padding: 0 .5rem;
         border-radius: 1rem;
         white-space: nowrap;
@@ -51,5 +55,26 @@ section#works {
       border-radius: 50%;
       margin-right: .5rem;
     }
+  }
+}
+
+
+// MEDIA QUERIES RESPONSIVINESS
+
+@media (min-width: 768px) {
+  #works {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #works {
+    padding: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #works {
+    grid-template-columns: 1fr 1fr;
   }
 }
