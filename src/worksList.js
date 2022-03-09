@@ -54,7 +54,7 @@ export let worksList = [
     name: 'Zen note',
     repo: 'https://github.com/tuliopxavier/zennote',
     description: 'A minimal note manager made with vanilla Javascript, HTML and Sass.',
-    demo: 'https://tuliopxavier.github.io/zennote/',
+    demo: 'https://zennote.vercel.app/',
     language: 'Sass',
     topics: [ 'javascript', 'html', 'sass', 'vanilla-javascript', 'dom-manipulation', 'css-animation'],
     color: '#ff5a98'
