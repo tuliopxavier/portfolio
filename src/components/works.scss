@@ -38,13 +38,18 @@ $color-gradient-3: #11a3d2;
       gap: .5rem;
       
       & li {
-        color: #ff5a98;
+        color: #000;
         list-style: none;
-        background-color: rgb(255, 90, 152, 0.2);
+        background-color: #ff5a98;
         padding: 0 .5rem;
         border-radius: 1rem;
         white-space: nowrap;
         font-weight: 200;
+
+        @media screen and (prefers-color-scheme: dark) {
+          color: #ff5a98;
+          background-color: #000;
+        }
       }
     }
 

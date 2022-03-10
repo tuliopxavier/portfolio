@@ -21,15 +21,15 @@ export const Header = () => {
     <header id='header'>
 
       <div id="avatar">
-        <a href="#home"><img src="https://avatars.githubusercontent.com/u/68478459?v=4" alt="circular profile avatar" /></a>
+        <a href="#home"><img src="https://avatars.githubusercontent.com/u/68478459?v=4" alt="circular profile black and white avatar smiling" /></a>
         <span id="divider"></span>
         <a href="#works"><span>works</span></a>
       </div>
       
       <div id="social-items">
-        <a href="http://www.github.com/tuliopxavier" target="_blank" rel="noreferrer"><GithubIcon className="social-item" /></a>
-        <a href="https://www.linkedin.com/in/tuliopxavier/" target="_blank" rel="noreferrer"><LinkedinIcon className="social-item" /></a>
-        <a href="http://www.twitter.com/tuliopxavier" target="_blank" rel="noreferrer"><TwitterIcon className="social-item" /></a>
+        <a href="http://www.github.com/tuliopxavier" target="_blank" rel="noreferrer"><GithubIcon className="social-item" alt='classial github flat icon' /></a>
+        <a href="https://www.linkedin.com/in/tuliopxavier/" target="_blank" rel="noreferrer"><LinkedinIcon className="social-item" alt='classical linkedin flat icon' /></a>
+        <a href="http://www.twitter.com/tuliopxavier" target="_blank" rel="noreferrer"><TwitterIcon className="social-item" alt='classical twitter flat icon' /></a>
       </div>
 
     </header> 
