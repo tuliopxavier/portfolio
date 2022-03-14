@@ -36,7 +36,7 @@ export let worksList = [
     description: 'Project build with Next SSR and SSG, dynamic routing, Typescript, Styled Components, Sass and Prismic (Headless CMS).',
     demo: 'https://prismic-next-styledcomponents.vercel.app/',
     language: 'Typescript',
-    topics: [ 'typescript', 'react', 'nextJS', 'css-in-js', 'skynexUI', 'sass', 'context-api', 'supabase'],
+    topics: [ 'typescript', 'react', 'nextJS', 'styled-components', 'server-side-rendering', 'static-site-generation', 'api-rest', 'headless-cms','prismic'],
     color: '#11a3d2'
   },
   {
@@ -56,7 +56,7 @@ export let worksList = [
     description: 'A minimal note manager made with vanilla Javascript, HTML and Sass.',
     demo: 'https://zennote.vercel.app/',
     language: 'Sass',
-    topics: [ 'javascript', 'html', 'sass', 'vanilla-javascript', 'dom-manipulation', 'css-animation'],
+    topics: [ 'javascript', 'html', 'sass', 'dom-manipulation', 'css-animation'],
     color: '#ff5a98'
   },
   {
