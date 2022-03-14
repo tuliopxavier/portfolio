@@ -27,9 +27,9 @@ export const Header = () => {
       </div>
       
       <div id="social-items">
-        <a href="http://www.github.com/tuliopxavier" target="_blank" rel="noreferrer"><GithubIcon className="social-item" ariaLabeledBy='classial github flat icon' /></a>
-        <a href="https://www.linkedin.com/in/tuliopxavier/" target="_blank" rel="noreferrer"><LinkedinIcon className="social-item" ariaLabeledBy='classical linkedin flat icon' /></a>
-        <a href="http://www.twitter.com/tuliopxavier" target="_blank" rel="noreferrer"><TwitterIcon className="social-item" ariaLabeledBy='classical twitter flat icon' /></a>
+        <a href="http://www.github.com/tuliopxavier" target="_blank" rel="noreferrer" ariaLabel='classial github flat icon'><GithubIcon className="social-item"/></a>
+        <a href="https://www.linkedin.com/in/tuliopxavier/" target="_blank" rel="noreferrer" ariaLabel='classical linkedin flat icon'><LinkedinIcon className="social-item"/></a>
+        <a href="http://www.twitter.com/tuliopxavier" target="_blank" rel="noreferrer" ariaLabel='classical twitter flat icon'><TwitterIcon className="social-item"/></a>
       </div>
 
     </header> 
