@@ -21,7 +21,7 @@ export const Header = () => {
     <header id='header'>
 
       <div id="avatar">
-        <a href="#home" ariaLabel='Tulio smiling'><img src="https://avatars.githubusercontent.com/u/68478459?v=4" alt="Tulio smiling in black and white circular avatar" /></a>
+        <a href="#home"><img alt="Tulio's avatar, takes to the top of the page" src="https://avatars.githubusercontent.com/u/68478459?v=4"/></a>
         <span id="divider"></span>
         <a href="#works"><span>works</span></a>
       </div>
