@@ -41,3 +41,13 @@ a {
     background-color: #222;
   }
 }
+
+// PREFER REDUCED MOTION
+
+@media (prefers-reduced-motion: reduce) {
+  header a span,
+  #home .color-motion,
+  footer p a .color-motion {
+    animation: none;
+  }
+}
