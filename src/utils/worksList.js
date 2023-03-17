@@ -1,4 +1,4 @@
-export let worksList = [
+export const worksList = [
 {
     id: 0,
     name: 'Dashboard challenge',

@@ -52,40 +52,51 @@ header {
 
       &:hover {
         transform: scale(1.4);
+        
+        color: $color-gradient-3;
+        cursor: url("../assets/circle.svg") 25 25, auto;
+    
+        @media screen and (prefers-color-scheme: dark) {
+          cursor: url("../assets/circle-white.svg") 25 25, auto;
+        }
       }
     }
   }
 
   & a {
     text-decoration: none;
+  }
 
-    &[href="#works"] {
-      transition: opacity .25s ease;
+  & span#works-link, span#schedule-mentoring-link {
+    font: 700 italic 1.75rem "Fira Sans";
+    background: linear-gradient(
+      45deg,
+      $color-gradient-1,
+      $color-gradient-2,
+      $color-gradient-3,
+      $color-gradient-1,
+      $color-gradient-2,
+      $color-gradient-3
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-      &:hover {
-        opacity: .75;
-      }
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+
+    transition: opacity .25s ease;
+
+    &:hover {
+      opacity: .75;
+      cursor: url("../assets/circle.svg") 25 25, auto;
+
+    @media screen and (prefers-color-scheme: dark) {
+      cursor: url("../assets/circle-white.svg") 25 25, auto;
     }
-
-    & span {
-      font: 700 italic 1.75rem "Fira Sans";
-      background: linear-gradient(
-        45deg,
-        $color-gradient-1,
-        $color-gradient-2,
-        $color-gradient-3,
-        $color-gradient-1,
-        $color-gradient-2,
-        $color-gradient-3
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      background-size: 400% 400%;
-      animation: gradient 30s ease infinite;
     }
   }
+  
 
   #social-items {
     display: flex;

@@ -1,6 +1,6 @@
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
-import { Works } from "./components/Works";
+// import { Works } from "./components/Works";
 import { Footer } from "./components/Footer";
 import "./global.scss";
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Home />
-      <Works />
+      {/* <Works /> */}
       <Footer/>
     </>
   );

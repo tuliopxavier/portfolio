@@ -1,4 +1,4 @@
-import { worksList } from '../worksList.js';
+import { worksList } from '../utils/worksList.js';
 import './works.scss';
 
 export const Works = () => {
